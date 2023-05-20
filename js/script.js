@@ -140,7 +140,7 @@ $(document).ready(function () {
     }, 1000);
   });
 
-  $('#blog').on('click', function(){
+  $('#blog').on('click', function () {
     $('html, body').animate({
       scrollTop: $('.container-paragrafi').offset().top
     }, 1000);
@@ -161,7 +161,7 @@ $(document).ready(function () {
   });
 
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var windowHeight = $(window).height();
     var scrollHeight = $(document).scrollTop();
     if ($(window).width() > 767) {
@@ -238,10 +238,10 @@ $(document).ready(function () {
 
 
 //EVENTO AL CLICK DI UNA SPIAGGIA CHE PORTA DIRETTAMENTE SU GOOGLE MAPS 
-$(".preview-beach").click(function() {
+$(".preview-beach").click(function () {
   switch ($(this).index()) {
     case 0:
-      window.open("https://www.google.com/maps/@40.7591898,17.6975203,18z/data=!10m2!1e3!2e10?rapsrc=apiv3" , "_blank");
+      window.open("https://www.google.com/maps/@40.7591898,17.6975203,18z/data=!10m2!1e3!2e10?rapsrc=apiv3", "_blank");
       break;
     case 1:
       window.open("https://www.google.com/maps/place/Spiaggia+dell'Isoletta/@40.7612783,17.6967532,18z/data=!4m6!3m5!1s0x1346699596b4f645:0xb57aa0b1af147f48!8m2!3d40.7604842!4d17.6965606!16s%2Fg%2F11c40q5zhq!10m2!1e3!2e10?rapsrc=apiv3", "_blank");
@@ -266,10 +266,8 @@ $(".preview-beach").click(function() {
 
 $('div[class*="title"]:not(.container-pharagrap-around-services-title)').css('color', '#00ffff');
 
-//CON SCHERMI PICCOLI I LINK SI VEDONO SUBITO
-$(document).ready(function () {
-  if ($(window).width() <= 767) {
-    $('.nav-item').css({'opacity': '1'});
-    $('.nav-social .nav-item ').css({'transform' : 'translateY(0)'});
-  }
-});
+// CON SCHERMI PICCOLI I LINK SI VEDONO SUBITO
+  var navSocial = document.querySelector('.nav-social');
+  navSocial.addEventListener('click', function () {
+    navSocial.classList.add('touch');
+  });

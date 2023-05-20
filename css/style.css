@@ -1181,6 +1181,7 @@
     }
 
     .main-container-around-services::-webkit-scrollbar {
+        width: 200px;
         height: 2px;
     }
 
@@ -1328,7 +1329,7 @@
 
     @media screen and (max-width: 960px) {
         .main-container-portfolio {
-            bottom: 22  0px;
+            bottom: 22 0px;
         }
     }
 
@@ -1397,6 +1398,7 @@
         align-items: center;
         pointer-events: none;
         user-select: none;
+        user-select: none;
     }
 
     .nav-social:hover {
@@ -1425,6 +1427,10 @@
     }
 
     .nav-social:hover .line {
+        transform: scaleX(1);
+    }
+
+    .nav-social.touch .line {
         transform: scaleX(1);
     }
 
@@ -1470,6 +1476,11 @@
         transform: translateY(0);
     }
 
+    .nav-social.touch .nav-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .nav-link {
         font-size: 15px;
     }
@@ -1503,6 +1514,26 @@
     }
 
     .nav-link:hover i.fa-map-location-dot {
+        color: #00ff80;
+    }
+
+    .nav-social.touch .sm-header:hover i.fa-facebook-f {
+        color: #008cff;
+    }
+
+    .nav-social.touch .sm-header:hover i.fa-airbnb {
+        color: #ff0000;
+    }
+
+    .nav-social.touch .sm-header:hover i.fa-whatsapp {
+        color: #2bff00;
+    }
+
+    .nav-social.touch .sm-header:hover i.booking {
+        color: #0026ff;
+    }
+
+    .nav-social.touch .sm-header:hover i.fa-map-location-dot {
         color: #00ff80;
     }
 
