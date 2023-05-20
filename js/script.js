@@ -266,7 +266,7 @@ $(".preview-beach").click(function () {
 
 $('div[class*="title"]:not(.container-pharagrap-around-services-title)').css('color', '#00ffff');
 
-// CON SCHERMI PICCOLI I LINK SI VEDONO SUBITO
+//SCRIPT PER AGEVOLARE GLI SCHERMI MOBILE
   var navSocial = document.querySelector('.nav-social');
   navSocial.addEventListener('click', function () {
     navSocial.classList.add('touch');
