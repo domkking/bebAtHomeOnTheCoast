@@ -265,3 +265,11 @@ $(".preview-beach").click(function() {
 
 
 $('div[class*="title"]:not(.container-pharagrap-around-services-title)').css('color', '#00ffff');
+
+//CON SCHERMI PICCOLI I LINK SI VEDONO SUBITO
+$(document).ready(function () {
+  if ($(window).width() <= 767) {
+    $('.nav-item').css({'opacity': '1'});
+    $('.nav-social .nav-item ').css({'transform' : 'translateY(0)'});
+  }
+});
