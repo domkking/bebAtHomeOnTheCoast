@@ -462,10 +462,10 @@
     .paragrafi-title h2 {
         text-align: center;
         letter-spacing: .1em;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 1;
         text-transform: uppercase;
-        color: #00ffff;
+        color: #d5b77f;
         margin-bottom: 5px;
     }
 
@@ -487,10 +487,6 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 2em;
-    }
-
-    .paragrafo-3 {
-        margin-top: 45px;
     }
 
     .paragrafi h3 {
@@ -516,7 +512,7 @@
 
     .paragrafo-1,
     .paragrafo-2,
-    .paragrafo-3 p {
+    .paragrafo-3{
         text-align: center;
         margin-top: 5px;
         letter-spacing: .1em;
@@ -978,6 +974,7 @@
     .container-title-beach {
         display: flex;
         color: #fff;
+        justify-content: center;
         padding: 1em;
     }
 
@@ -1132,6 +1129,7 @@
 
     .container-around-services-title {
         display: flex;
+        justify-content: center;
         padding: 1em;
     }
 

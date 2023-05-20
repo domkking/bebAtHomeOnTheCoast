@@ -122,6 +122,12 @@ $(document).ready(function () {
     }, 1000);
   });
 
+  $('#services').on('click', function () {
+    $('html, body').animate({
+      scrollTop: $('.container-services').offset().top
+    }, 1000);
+  });
+
   $('#gallery').on('click', function () {
     $('html, body').animate({
       scrollTop: $('.gallery').offset().top
@@ -264,7 +270,7 @@ $(".preview-beach").click(function () {
 });
 
 
-$('div[class*="title"]:not(.container-pharagrap-around-services-title)').css('color', '#00ffff');
+$('div[class*="title"]:not(.container-pharagrap-around-services-title)').css('color', '#d5b77f');
 
 //SCRIPT PER AGEVOLARE GLI SCHERMI MOBILE
   var navSocial = document.querySelector('.nav-social');
